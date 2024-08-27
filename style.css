@@ -1,6 +1,6 @@
 body {
     font-family: Merriweather,Georgia,serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
     line-height: 1.5;
     margin: 0;
@@ -31,7 +31,7 @@ a:hover {
 
 .blog-post {
     width: 90%;
-    max-width: 600px;
+    max-width: 650px;
     margin: 40px auto;
     background-color: #fff;
     padding: 20px;
