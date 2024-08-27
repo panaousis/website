@@ -1,0 +1,55 @@
+body {
+    font-family: Merriweather,Georgia,serif;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+pre {
+    font-family: monospace;
+    line-height: 50%;
+  
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.blog-post {
+    width: 90%;
+    max-width: 600px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 10px;
+    }
+    .blog-post {
+        width: 95%;
+        padding: 10px;
+    }
+}
