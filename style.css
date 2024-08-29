@@ -49,11 +49,11 @@ img {
 
 @media (max-width: 600px) {
     .container {
-        width: 95%;
+        width: 90%;
         padding: 10px;
     }
     .blog-post {
-        width: 95%;
+        width: 90%;
         padding: 10px;
     }
 }
