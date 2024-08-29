@@ -25,6 +25,10 @@ a {
     color: #007BFF;
 }
 
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
 a:hover {
     text-decoration: underline;
 }
