@@ -67,22 +67,22 @@ img {
 
 .blog-section h2 {
     font-family: 'Source Sans Pro', Arial, sans-serif;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border-bottom: 2px solid #ddd;
     padding-bottom: 10px;
 }
 
 .blog-list {
-    list-style-type: none;
-    padding: 0;
+    list-style-type: disc;
+    padding: none;
 }
 
 .blog-list li {
-    padding: 8px 0;
+    padding: 3px 0;
 }
 
 .blog-list a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #333;
 }
 
