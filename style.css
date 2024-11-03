@@ -65,6 +65,27 @@ img {
     display: block;
 }
 
+.blog-section h2 {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    font-size: 1.8rem;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.blog-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.blog-list li {
+    padding: 8px 0;
+}
+
+.blog-list a {
+    font-size: 1rem;
+    color: #333;
+}
+
 @media (max-width: 600px) {
     .container {
         width: 90%;
