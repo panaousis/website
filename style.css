@@ -4,6 +4,7 @@ body {
     color: #333;
     line-height: 1.6;
     margin: 0;
+    word-spacing: -1px;
     padding: 0;
 }
 
