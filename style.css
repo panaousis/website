@@ -156,7 +156,7 @@ img {
     }
 
     .nav-list li {
-        display: block;
+        display:flex
         padding: 10px;
     }
 }
