@@ -142,21 +142,3 @@ img {
 .nav-list a:hover {
     color: #007BFF;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    .menu-toggle {
-        display: flex;
-    }
-
-    .nav-list {
-        display: none;
-        width: 100%;
-        text-align: left;
-    }
-
-    .nav-list li {
-        display:flex
-        padding: 10px;
-    }
-}
