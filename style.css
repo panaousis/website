@@ -98,3 +98,65 @@ img {
         padding: 10px;
     }
 } 
+
+/* Basic styling for navigation */
+.navigation {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 3px auto;
+    transition: 0.3s;
+}
+
+/* Navigation list styling */
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-list li {
+    display: inline;
+    padding: 0 15px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+.nav-list a:hover {
+    color: #007BFF;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-list {
+        display: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .nav-list li {
+        display: block;
+        padding: 10px;
+    }
+}
