@@ -1,6 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif, serif;
-    font-size: 1.15rem;
+    font-size: 1.09rem;
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -16,21 +16,21 @@ body {
 }
 
 .header {
-    text-align: center;
+    text-align: left;
+    max-width: 700px;
     padding: 20px;
-    color: #ffffff;
-    background-color: #000000;
+    margin: 20px auto
 }
 
 .header h1 {
     font-family: 'Source Sans Pro', Arial, sans-serif;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     margin: 0;
 }
 
 .tagline {
     font-size: 1.0rem;
-    color: #ffffff;
+    color: #090000b6;
 }
 
 pre {
@@ -84,8 +84,8 @@ img {
 }
 
 .blog-list a {
-    font-size: 1.1rem;
-    color: #333;
+    font-size: 1.09rem;
+    color:#007acc;
 }
 
 @media (max-width: 600px) {
@@ -98,3 +98,49 @@ img {
         padding: 10px;
     }
 } 
+
+/* Content Section */
+.content-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+}
+
+.content-list a {
+    text-decoration: none;
+    color: #007acc;
+    font-weight: bold;
+}
+
+.content-list a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Styles */
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    width: 90%;
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 0px;
+}
+
+.nav-list li {
+    font-size: 1rem;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #007acc;
+}
+
+.nav-list a:hover {
+    text-decoration: underline;
+}
