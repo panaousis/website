@@ -30,6 +30,7 @@ body {
 
 .tagline {
     font-size: 1.0rem;
+    display: none;
     color: #090000b6;
 }
 
