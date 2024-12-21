@@ -47,6 +47,8 @@ a {
 h1 {
     font-family: Tahoma, Verdana, Geneva, sans-serif
     word-spacing: -2px;
+    font-size: 1.7em;
+    line-height: 1.2;
 }
 
 a:hover {
