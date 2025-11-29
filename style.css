@@ -197,6 +197,8 @@ h2, h3, h4, h5 {
     line-height: 1.2;
 }
 
+.spacer-20 { height: 20px; }
+
 /* Responsive */
 
 @media (max-width: 600px) {
