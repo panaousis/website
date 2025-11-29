@@ -29,7 +29,7 @@ body {
                "Helvetica Neue", Arial, sans-serif;
 
   /* Match old WordPress sizing behaviour */
-  font-size: clamp(0.923em, 0.923rem + ((1vw - 0.2em) * 5.0), 1.20em);
+  font-size: clamp(1.00rem, 1.00rem + ((1vw - 0.2rem) * 5), 1.20rem);
   line-height: 1.8;
 }
 
@@ -166,36 +166,13 @@ a:hover {
   text-align: center;
 }
 
-/* Responsive */
-
-@media (max-width: 600px) {
-  .page {
-    padding: 2.5rem 1.25rem 3rem;
-  }
-
-  .site-title {
-    font-size: 1.9rem;
-  }
-
-  .site-nav {
-    gap: 1.25rem;
-  }
-
-  .cta {
-    padding-left: 0;
-    padding-right: 0;
-  }
-}
-
 .blog-post {
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1.75rem;
   font-family: var(--font-sans);
   color: var(--text);
-  
-  /* Slightly smaller than homepage */
-  font-size: 1.09rem;          /* stable readable size */
+  font-size: 1.09rem;         
   line-height: 1.75;
 }
 
@@ -214,4 +191,29 @@ h1 {
 h2, h3, h4, h5 {
   color: var(--heading);
     line-height: 1.2;
+}
+
+/* Responsive */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 2.5rem 1.25rem 3rem;
+  }
+
+  .blog-post {
+    font-size: 1.10rem;
+  }
+
+  .site-title {
+    font-size: 1.9rem;
+  }
+
+  .site-nav {
+    gap: 1.25rem;
+  }
+
+  .cta {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
