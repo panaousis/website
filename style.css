@@ -20,6 +20,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px; /* locks rem = 16px */
+}
+
 body {
   margin: 0;
   background-color: #fffceb;
@@ -28,7 +32,7 @@ body {
                "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
                "Helvetica Neue", Arial, sans-serif;
 
-  /* Match old WordPress sizing behaviour */
+  /* PREVIOUS: font-size: clamp(0.923rem, 0.923rem + ((1vw - 0.2rem) * 5), 1.20rem);*/
   font-size: clamp(1.00rem, 1.00rem + ((1vw - 0.2rem) * 5), 1.20rem);
   line-height: 1.8;
 }
