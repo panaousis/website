@@ -33,7 +33,7 @@ body {
                "Helvetica Neue", Arial, sans-serif;
 
   /* PREVIOUS: font-size: clamp(0.923rem, 0.923rem + ((1vw - 0.2rem) * 5), 1.20rem);*/
-  font-size: clamp(1.00rem, 1.00rem + ((1vw - 0.2rem) * 5), 1.17rem);
+  font-size: clamp(1.00rem, 1.00rem + ((1vw - 0.2rem) * 5), 1.20rem);
   line-height: 1.8;
 }
 
@@ -51,7 +51,7 @@ a:hover {
 /* Layout */
 
 .page {
-  max-width: 700px;            /* narrower page width */
+  max-width: 740px;            /* narrower page width */
   margin: 0 auto;
   padding: 3rem 1.75rem 4rem;
 }
