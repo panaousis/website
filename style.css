@@ -1,12 +1,15 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Literata:ital,opsz,wght@0,7..72,400;0,7..72,600;1,7..72,400&display=swap');
 
 
 :root {
-  --font-sans: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-               "Helvetica Neue", Arial, sans-serif;
-  --bg: #fffceb;
+  --font-sans: "Libre Franklin", Arial, Helvetica, sans-serif;
+  --font-serif: "Literata", Georgia, "Times New Roman", serif;
+  --font-size-body: 1.0625rem;   /* 17px — homepage & general copy */
+  --font-size-article: 1rem;     /* 16px — long-form blog posts */
+  --line-height-body: 1.65;
+  --line-height-article: 1.7;
+  --bg: #fafafa;
   --text: #232b2d;
   --heading: #121835;
   --accent: #02274d;
@@ -26,15 +29,12 @@ html {
 
 body {
   margin: 0;
-  background-color: #fffceb;
+  background-color: var(--bg);
   color: #232b2d;
-  font-family: "IBM Plex Sans", -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
-               "Helvetica Neue", Arial, sans-serif;
-
-  /* PREVIOUS: font-size: clamp(0.923rem, 0.923rem + ((1vw - 0.2rem) * 5), 1.20rem);*/
-  font-size: clamp(1.00rem, 1.00rem + ((1vw - 0.2rem) * 5), 1.20rem);
-  line-height: 170%;
+  font-family: var(--font-serif);
+  font-size: var(--font-size-body);
+  line-height: var(--line-height-body);
+  font-optical-sizing: auto;
 }
 
 /* Links */
@@ -59,16 +59,20 @@ a:hover {
 /* Header */
 
 .site-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 3rem;
 }
 
 .site-title {
-   margin: 0 0 0.75rem;
+  margin: 0 0 0.75rem;
+  width: 100%;
   font-family: var(--font-sans);
-    font-size: clamp(1.7rem, 4vw, 2.3rem);
+  font-size: 2rem;
   font-weight: 700;
-  letter-spacing: -0.02em;    /* tighter, like the original */
+  letter-spacing: -0.02em;
   line-height: 1.05;
   color: var(--heading);
 }
@@ -76,12 +80,17 @@ a:hover {
 /* Nav */
 
 .site-nav {
-   display: flex;
+  display: flex;
   justify-content: center;
-  gap: 1.75rem;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0 0.5rem;
+  width: 100%;
+  margin: 0;
+  padding: 0;
   font-family: var(--font-sans);
   font-weight: 400;
-  font-size: 1.1rem;
+  font-size: 1rem;
 }
 
 .site-nav a {
@@ -93,10 +102,16 @@ a:hover {
   text-decoration: underline;
 }
 
+.nav-sep {
+  color: var(--heading);
+  opacity: 0.35;
+  user-select: none;
+}
+
 /* Main copy */
 
 .site-main {
-  margin-top: 2.5rem;
+  margin-top: 4rem;
 }
 
 .intro p {
@@ -138,6 +153,7 @@ a:hover {
   background-color: var(--heading);
   color: var(--bg);
   padding: 0.8rem 0.8rem;
+  font-family: var(--font-sans);
   font-size: 0.95rem;
   font-weight: 600;
   border-radius: 0;            /* square edges */
@@ -174,10 +190,15 @@ a:hover {
   max-width: 700px;
   margin: 0 auto;
   padding: 2rem 1.75rem;
-  font-family: var(--font-sans);
+  font-family: var(--font-serif);
   color: var(--text);
-  font-size: 1.12rem;         
-  line-height: 1.75;
+  font-size: var(--font-size-article);
+  line-height: var(--line-height-article);
+  font-optical-sizing: auto;
+}
+
+.archive-intro {
+  margin: 0 0 1.5rem;
 }
 
 img {
@@ -186,15 +207,14 @@ img {
     display: block;
 }
 
-h1 {
-    color: var(--heading);
-    font-size: 2.0rem;
-    line-height: 1.2;
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-sans);
+  color: var(--heading);
+  line-height: 1.2;
 }
 
-h2, h3, h4, h5 {
-  color: var(--heading);
-    line-height: 1.2;
+h1 {
+  font-size: 1.75rem;
 }
 
 .spacer-20 { height: 20px; }
@@ -204,18 +224,6 @@ h2, h3, h4, h5 {
 @media (max-width: 600px) {
   .page {
     padding: 2.5rem 1.25rem 3rem;
-  }
-
-  .blog-post {
-    font-size: 1.10rem;
-  }
-
-  .site-title {
-    font-size: 1.9rem;
-  }
-
-  .site-nav {
-    gap: 1.25rem;
   }
 
   .cta {
