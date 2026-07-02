@@ -11,8 +11,12 @@
   --line-height-article: 1.7;
   --bg: #fafafa;
   --text: #232b2d;
-  --heading: #121835;
+  --heading: #302d2c;
   --accent: #02274d;
+  --hero-bar-text: #8a8a8a;
+  --hero-bar-border: #c8c8c8;
+  --link: #b3232f;
+  --link-underline: #e6d099;
 }
 
 /* Reset-ish */
@@ -40,8 +44,9 @@ body {
 /* Links */
 
 a {
-  color: var(--text);
+  color: var(--link);
   text-decoration: underline;
+  text-decoration-color: var(--link-underline);
 }
 
 a:hover {
@@ -84,34 +89,43 @@ a:hover {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  gap: 0 0.5rem;
+  gap: 0.35rem 1.75rem;
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: var(--font-sans);
+}
+
+/* Homepage hero */
+
+.home-hero {
+  margin: 1.5rem 0 1.75rem;
+}
+
+.hero-bar {
+  margin: 0;
+  padding: 0.7rem 1rem;
+  border-top: 1px solid var(--hero-bar-border);
+  border-bottom: 1px solid var(--hero-bar-border);
+  font-family: var(--font-serif);
+  font-size: 0.9375rem;
   font-weight: 400;
-  font-size: 1rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--hero-bar-text);
 }
 
-.site-nav a {
+.hero-bar a {
+  color: inherit;
   text-decoration: none;
-  color: var(--heading);
 }
 
-.site-nav a:hover {
+.hero-bar a:hover {
   text-decoration: underline;
 }
 
-.nav-sep {
-  color: var(--heading);
-  opacity: 0.35;
-  user-select: none;
-}
-
-/* Homepage banner */
-
 .home-banner {
-  margin: 1.75rem 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -119,6 +133,38 @@ a:hover {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.featured-article {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.75rem;
+  text-transform: none;
+  letter-spacing: normal;
+}
+
+.featured-label {
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--hero-bar-text);
+}
+
+.featured-article .featured-title {
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 0.01em;
+  text-transform: none;
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-color: var(--link-underline);
+  text-underline-offset: 0.15em;
+}
+
+.featured-article .featured-title:hover {
+  text-decoration: underline;
 }
 
 /* Main copy */
@@ -163,7 +209,7 @@ a:hover {
   display: block;              /* full-width button */
   width: 100%;
   text-align: center;
-  background-color: var(--heading);
+  background-color: #302d2c;
   color: var(--bg);
   padding: 0.8rem 0.8rem;
   font-family: var(--font-sans);
@@ -174,7 +220,7 @@ a:hover {
 }
 
 .cta-button:hover {
-  background-color: #1d1f40;
+  background-color: #252322;
 }
 
 /* Footer bits */
@@ -239,10 +285,15 @@ h1 {
     padding: 2.5rem 1.25rem 3rem;
   }
 
-  .home-banner {
+  .home-hero {
     margin-left: -1.25rem;
     margin-right: -1.25rem;
     width: calc(100% + 2.5rem);
+  }
+
+  .hero-bar {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .cta {
