@@ -101,6 +101,10 @@ a:hover {
   margin: 1.5rem 0 1.75rem;
 }
 
+.hero-bar.site-nav {
+  font-size: 0.8125rem;
+}
+
 .hero-bar {
   margin: 0;
   padding: 0.7rem 1rem;
