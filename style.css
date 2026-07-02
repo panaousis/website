@@ -99,6 +99,17 @@ a:hover {
 
 .home-hero {
   margin: 1.5rem 0 1.75rem;
+  container-type: inline-size;
+}
+
+/* When the nav would wrap, keep pairs balanced (2 + 2) instead of 3 + 1 */
+@container (max-width: 30rem) {
+  .hero-bar.site-nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: 0.35rem 1.75rem;
+  }
 }
 
 .hero-bar.site-nav {
