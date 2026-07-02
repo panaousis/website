@@ -85,14 +85,35 @@ a:hover {
 /* Nav */
 
 .site-nav {
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav-links {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   gap: 0.35rem 1.75rem;
-  width: 100%;
-  margin: 0;
+}
+
+.nav-menu-toggle {
+  display: none;
+  margin: 0 auto;
   padding: 0;
+  border: 0;
+  background: none;
+  font: inherit;
+  color: inherit;
+  letter-spacing: inherit;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.nav-menu-toggle:hover {
+  text-decoration: underline;
 }
 
 /* Homepage hero */
@@ -102,18 +123,37 @@ a:hover {
   container-type: inline-size;
 }
 
-/* When the nav would wrap, keep pairs balanced (2 + 2) instead of 3 + 1 */
 @container (max-width: 30rem) {
   .hero-bar.site-nav {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    justify-content: center;
-    gap: 0.35rem 1.75rem;
+    text-align: center;
+  }
+
+  .nav-menu-toggle {
+    display: block;
+  }
+
+  .site-nav-links {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.7rem);
+    left: 0;
+    right: 0;
+    z-index: 10;
+    flex-direction: column;
+    gap: 0.85rem;
+    padding: 0.85rem 1rem 1rem;
+    background: var(--bg);
+    border-bottom: 1px solid var(--hero-bar-border);
+    box-shadow: 0 6px 16px rgba(35, 43, 45, 0.08);
+  }
+
+  .hero-bar.site-nav.is-open .site-nav-links {
+    display: flex;
   }
 }
 
 .hero-bar.site-nav {
-  font-size: 0.8125rem;
+  font-size: 0.9rem;
 }
 
 .hero-bar {
