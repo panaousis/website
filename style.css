@@ -34,6 +34,7 @@ html {
 body {
   margin: 0;
   background-color: var(--bg);
+  /* background-color: #fffbef6b; */
   color: #232b2d;
   font-family: var(--font-serif);
   font-size: var(--font-size-body);
@@ -172,8 +173,8 @@ a:hover {
 }
 
 .hero-bar a {
-  color: inherit;
-  text-decoration: none;
+  /* color: inherit; */
+  /* text-decoration: none; */
 }
 
 .hero-bar a:hover {
