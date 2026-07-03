@@ -322,6 +322,7 @@ a:hover {
 .archive-list {
   margin: 0;
   padding-left: 1.25rem;
+  font-size: var(--font-size-article);
 }
 
 .archive-list li {
