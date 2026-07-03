@@ -8,11 +8,34 @@
   <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.png" />
 </head>
 <body>
-  <main>
-    <article class="blog-post">
+  <div class="page">
+
+    <header class="site-header">
+      <a class="site-brand" href="index.html">Nikos Panaousis</a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <button
+          type="button"
+          class="nav-menu-toggle"
+          aria-expanded="false"
+          aria-controls="site-nav-menu"
+        >
+          Menu
+        </button>
+        <div class="site-nav-links" id="site-nav-menu">
+          <a href="https://blog.panaousis.com">Blog</a>
+          <a href="https://panaousis.substack.com/welcome">Newsletter</a>
+          <a href="blog.html">Archive</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="site-main">
       <h1>Contact</h1>
       <p>You can email me at nikos [at] panaousis.com</p>
-    </article>
-  </main>
+    </main>
+
+  </div>
+  <script src="nav.js"></script>
 </body>
 </html>

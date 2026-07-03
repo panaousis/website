@@ -1,5 +1,5 @@
 (function () {
-  var nav = document.querySelector(".hero-bar.site-nav");
+  var nav = document.querySelector(".site-nav");
   if (!nav) return;
 
   var toggle = nav.querySelector(".nav-menu-toggle");
