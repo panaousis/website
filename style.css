@@ -217,7 +217,8 @@ a:hover {
 }
 
 .intro p {
-  margin: 0 0 1.1rem;
+  /* margin: 0 0 1.1rem; */
+  margin: 0 0 1.5rem;
 }
 
 /* Emphasis */
@@ -326,7 +327,8 @@ a:hover {
 }
 
 .archive-list li {
-  margin-bottom: 0.6rem;
+  /* margin-bottom: 0.6rem; */
+  margin-bottom: 0.4rem;
 }
 
 img {
