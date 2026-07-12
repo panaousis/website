@@ -313,6 +313,19 @@ a:hover {
 
 /* Blog posts */
 
+.back-home {
+  display: inline-block;
+  margin: 0 0 0.5rem;
+  font-family: var(--font-sans);
+  font-size: 0.9375rem;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.back-home:hover {
+  color: var(--link);
+}
+
 .blog-post {
   max-width: 700px;
   margin: 0 auto;
